@@ -1,0 +1,201 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url("img/abc.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+.cube {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 85px;
+}
+
+#prod2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 1000px;
+}
+
+#prod3 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 2000px;
+}
+
+#prod4 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 2500px;
+}
+
+#cube1 {
+    color: black;
+    ;
+    background: linear-gradient(white, rgba(77, 77, 51, 0.8));
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 500px;
+}
+
+#prod1 {
+    color: black;
+    background: linear-gradient(white, rgba(77, 77, 51, 0.8));
+    width: 100%;
+    height: 500px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    position: absolute;
+    top: 1500px;
+}
+
+header {
+    background-color: #6991AC;
+    width: 100%;
+    height: 86px;
+}
+
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    margin: 20px;
+    float: left;
+    width: 88px;
+    height: 60px;
+    background: url(img/j3.jpg) no-repeat center;
+}
+
+
+/*-----------------START NAVIGATION-----------*/
+
+nav {
+    float: right;
+    padding: 25px 20px 0 0;
+}
+
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(img/gg.png) center;
+}
+
+a:hover#menu-icon {
+    border-radius: 4px 4px 0 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 150%;
+    font-family: 'Alegreya Sans', sans-serif;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #C3D70F;
+}
+
+.current {
+    color: #cc2900;
+}
+
+
+/*--------------END OF NAVIGATION------------*/
+
+.contents {
+    height: 300px;
+    background-color: #16a085;
+    font-size: 36px;
+    margin-top: 400px;
+}
+
+
+/*-----------------------MEDIA-------------*/
+
+@media screen and (max-width: 768px) {
+    header {
+        position: absolute;
+    }
+    #logo {
+        margin: 15px 0 20 -25px;
+        background: url(img/j3.jpg) no-repeat center;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul,
+    nav:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: #6991AC;
+        right: 20px;
+        top: 60px;
+        border: 3px solid #FFF;
+        border-radius: 2px 0 2px 2px;
+        width: 50%;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .cube {
+        color: white;
+        background-color: rgb(0, 0, 0, 0.8);
+        width: 100%;
+        height: 500px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 85px;
+    }
+}
